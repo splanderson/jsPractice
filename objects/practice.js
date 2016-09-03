@@ -96,26 +96,37 @@ var album = {
   song3: '3:45',
   song4: '4:56',
   song5: '5:67'
-};
+},
+myAlbums = [];
 
 //Now, loop through your album object alerting every song title individually.
 
 for(var i in album){
-  alert(key);
+  myAlbums.push(i);
 }
+alert(myAlbums);
 
 
 //NEXT PROBLEM
 
 //Create an object called states that has 5 US states as properties with the values being their population (doesn't have to be accurate).
 
-  //Code Here
+var states = {
+  Alabama: 50000,
+  Alaska: 300,
+  Arkansas: 600,
+  Connecticut: 90000,
+  California: 19000
+}, pop = [];
 
 //Now, loop through your states object and if the states population is greater than 30K, alert that state.
 
-  //Code Here
-
-
+for(i in states){
+  if(states[i] > 30000){
+    pop.push(i);
+  }
+}
+alert(pop);
 
 
 //NEXT PROBLEM
