@@ -131,9 +131,6 @@ alert(pop);
 
 //NEXT PROBLEM
 
-
-
-
 var user1 = {
     name: 'Tyler McGinnis',
     email: null,
@@ -145,19 +142,21 @@ var user1 = {
 /*Above you're given a user object. Loop through the user object checking to make sure
 that each value is truthy. If it's not truthy, remove it from the object. */
 
-  //Code Here
+for(var obj in user1){
+  if(user1.hasOwnProperty(obj) && !user1[obj]){
+    delete user1[obj];
+  }
+}
 
 //Once you get your truthy Object, Change the remaining values in the object to be specific to you (name: 'your name', username: 'your username'), rather than my information.
 
-  //Code Here
-
+user1.name = 'Eric';
+user1.pwHash = 'ajewh';
+user1.username = 'splanderson';
 
 
 
 //NEXT PROBLEM
-
-
-
 
 var user2 = {
         name: 'Tyler McGinnis',
@@ -173,19 +172,14 @@ var user2 = {
 //Let's say I, the user, decided to change my name and email address to the following
 // name -> 'Tyler S. McGinnis', email -> 'tyler.mcginnis@devmounta.in'. Make that change.
 
-  //Code Here
+user2.name = 'Tyler S. McGinnis';
+user2.email = 'tyler.mcginnis@devmounta.in';
 
 //Now call the sayName method that's on the user object which will alert the users email
 
-  //Code Here
-
-
-
+sayName();
 
 //NEXT PROBLEM
-
-
-
 
 //Create an empty object called methodCollection.
 
