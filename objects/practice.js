@@ -66,21 +66,27 @@ console.log(backPack);
 
 //NEXT PROBLEM
 
-//Create an 'alsoMe' object with the following properties name, age, height, gender, married, eyeColor, hairColor. Fill those properties in with the appropriate values.
+//Create an 'alsoMe' object with the following properties name, age, height, gender, married, eyeColor, hairColor.
+//Fill those properties in with the appropriate values.
 
-
+var alsoMe = {
+  name: 'Eric',
+  age: 34,
+  height: '5\'9',
+  gender: 'male',
+  married: true,
+  eyeColor: 'blue',
+  hairColor: 'blonde'
+};
 
 //Now, loop through your object and alert every value. *Tyler --> 24 --> 6'0 --> Male, etc etc
 
-  //Code Here
-
-
+for(var i in alsoMe){
+  alert(alsoMe[i]);
+}
 
 
 //NEXT PROBLEM
-
-
-
 
 //Create an Object called 'album' with 5 keys named different song titles that you make up, with the values being the length of each song.
 
