@@ -58,12 +58,14 @@ multiply(4, 3, function(answer){
 
 
 /* NEXT PROBLEM ---- NEXT PROBLEM ---- NEXT PROBLEM ---- NEXT PROBLEM */
+//Contains
 
-
-
-
-
-  //Code Here for contains
+function contains(names, name1, cb){
+  for(var i = 0; i < names.length; i++){
+    cb(names[i] === name1);
+  }
+  // cb(names[0] === name1);
+}
 
 contains(names, 'Colt', function(result){
   if(result === true){
@@ -74,15 +76,12 @@ contains(names, 'Colt', function(result){
 });
 
 
-
-
-
 /* NEXT PROBLEM ---- NEXT PROBLEM ---- NEXT PROBLEM ---- NEXT PROBLEM */
+//Uniq
 
+function uniq(names, cb){
 
-
-
-    //Code Here for uniq
+}
 
 uniq(names, function(uniqArr){
   console.log('The new names array with all the duplicate items removed is ', uniqArr);
