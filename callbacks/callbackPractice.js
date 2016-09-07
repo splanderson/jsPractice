@@ -104,18 +104,17 @@ uniq(names, function(uniqArr){
 
 
 /* NEXT PROBLEM ---- NEXT PROBLEM ---- NEXT PROBLEM ---- NEXT PROBLEM */
+//Each
 
-
-
-
-    //Code Here for each
+function each(array, cb){
+  for(var i = 0; i < array.length; i++){
+    cb(array[i], i);
+  }
+}
 
 each(names, function(item, indice){
   console.log('The item in the ' + indice + ' position is ' + item)
 });
-
-
-
 
 
 /* NEXT PROBLEM ---- NEXT PROBLEM ---- NEXT PROBLEM ---- NEXT PROBLEM */
