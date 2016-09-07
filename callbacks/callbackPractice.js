@@ -22,7 +22,7 @@ function sayHi(string, cb){
 
 //First
 
-var first = function (names, log){
+var first = function(names, log){
   log(names[0]);
 }
 
@@ -36,22 +36,17 @@ first(names, function(firstName){
 /* NEXT PROBLEM ---- NEXT PROBLEM ---- NEXT PROBLEM ---- NEXT PROBLEM */
 //Last
 
-  //Code Here for last
+var last = function(names, cb){
+  cb(names[names.length - 1]);
+}
 
 last(names, function(lastName){
   console.log('The last name in names is ' + lastName);
 });
 
 
-
-
-
 /* NEXT PROBLEM ---- NEXT PROBLEM ---- NEXT PROBLEM ---- NEXT PROBLEM */
-
-
-
-
-
+//Multiply
 
   //Code Here for multiply
 
