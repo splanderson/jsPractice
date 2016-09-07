@@ -79,16 +79,28 @@ contains(names, 'Colt', function(result){
 /* NEXT PROBLEM ---- NEXT PROBLEM ---- NEXT PROBLEM ---- NEXT PROBLEM */
 //Uniq
 
-function uniq(names, cb){
-
+function uniq(array, cb){
+  var answer = [];
+  var match = false;
+  for(var i = 0; i < array.length; i++){
+    for(var j = i + 1; j < array.length; j++){
+      if(array[i] === array[j]){
+        match = true;
+      }
+    }
+    if(!match){
+      answer.push(array[i]);
+    }
+    else if(match){
+      match = false;
+    }
+  }
+  cb(answer);
 }
 
 uniq(names, function(uniqArr){
   console.log('The new names array with all the duplicate items removed is ', uniqArr);
 });
-
-
-
 
 
 /* NEXT PROBLEM ---- NEXT PROBLEM ---- NEXT PROBLEM ---- NEXT PROBLEM */
