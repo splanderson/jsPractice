@@ -1,7 +1,7 @@
 //We're in a job interview. Answer the following questions (try to not look at your notes unless you have to).
   // 1) What is the purpose of the 'this keyword'?
 
-      //To bind objects to certain
+      //Calls 
 
   // 2) What are the four rules that govern what the 'this keyword' is bound to and describe each?
 
@@ -12,12 +12,12 @@
 
   // 3) What is the difference between call and apply?
 
-      //Call:
+      //Call: Chooses which objects 'this' will be referred to.
       //Apply:
 
   // 4) What does .bind do?
 
-      //It binds an object to a function.
+      //It binds an object to a copy of the function.
 
 
 //Next Problem
@@ -72,7 +72,13 @@ var getYear = function(){
 //Above you're given the getYear function. Using your prius and mustang objects from above, use the proper syntax that will allow for you to call the getYear function with the prius then the mustang objects being the focal objects. *Don't add getYear as a property on both objects*.
 
 //Note(no tests)
-  //Code Here
+
+Car.prototype.getYear = getYear;
+
+prius.getYear();
+mustang.getYear();
+// this.getYear(prius);
+// this.getYear(mustang);
 
 
 //New Problem
@@ -87,14 +93,14 @@ var getMyUsername = function() {
  return this.username;
 };
 
-var userName = getMyUsername(); //Fix this
+var userName = getMyUsername.call(myUser); //Fix this
 
 //Above you're given an object, a function, and a setTimeout invocation. After 5 seconds, what will the getUsername function return?
 //Note(no tests)
-  //Answer Here
+  //iliketurtles
 
 //In the example above, what is the 'this keyword' bound to when getUsername runs?
 
-  //Answer Here
+  //Window
 
 //Fix the getMyUsername invocation so that userName will be equal to 'iliketurtles'.
