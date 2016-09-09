@@ -1,7 +1,7 @@
 //We're in a job interview. Answer the following questions (try to not look at your notes unless you have to).
   // 1) What is the purpose of the 'this keyword'?
 
-      //Calls 
+      //Invokes on the object that it is tied to, or else it applies to the window.
 
   // 2) What are the four rules that govern what the 'this keyword' is bound to and describe each?
 
@@ -12,8 +12,8 @@
 
   // 3) What is the difference between call and apply?
 
-      //Call: Chooses which objects 'this' will be referred to.
-      //Apply:
+      //Call: Invokes the object 'this' will be referred to.
+      //Apply: Same as call, but applies to Arrays.
 
   // 4) What does .bind do?
 
